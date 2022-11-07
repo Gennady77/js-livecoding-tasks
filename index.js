@@ -24,4 +24,6 @@ const str1 = '()';
 const str2 = '({} ([]))';
 const str3 = '}}';
 
+console.log(isValid(str1)); //true
 console.log(isValid(str2)); //true
+console.log(isValid(str3)); //false
