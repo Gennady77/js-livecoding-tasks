@@ -16,6 +16,5 @@ function SplitAndAdd(arr, k) {
 }
 
 let arr = [12, 10, 5, 6, 52, 36];
-let n = arr.length;
 SplitAndAdd(arr, 2);
 console.log(arr); // [5, 6, 52, 36, 12, 10]

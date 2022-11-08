@@ -1,3 +1,26 @@
-h1, h2 {
-  font-family: Lato;
+#app {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  background-color: yellow;
+}
+
+#app::after,
+#app::before {
+  content: '';
+  position: absolute;
+  background-color: green;
+  z-index: 10;
+  width: 50%;
+  height: 50%;
+}
+
+#app::before {
+  top: 0;
+  left: 0;
+}
+
+#app::after {
+  bottom: 0;
+  right: 0;
 }

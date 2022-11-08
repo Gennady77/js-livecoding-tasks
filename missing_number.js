@@ -12,4 +12,5 @@ function missing(arr) {
   return summ;
 }
 
-console.log(missing([2, 1, 4, 5, 6]));
+console.log(missing([2, 1, 4, 5, 6])); //3
+console.log(missing([2, 1, 4, 5, 6, 7, 8]));
