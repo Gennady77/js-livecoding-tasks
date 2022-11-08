@@ -1,26 +1,21 @@
 console.log('===== sum rotations example =====');
 
 function maxSum(arr) {
-  // Find array sum and i*arr[i] with no rotation
   let n = arr.length;
-  let arrSum = 0; // Stores sum of arr[i]
-  let currVal = 0; // Stores sum of i*arr[i]
+  let arrSum = 0;
+  let currVal = 0;
   for (let i = 0; i < n; i++) {
     arrSum = arrSum + arr[i];
     currVal = currVal + i * arr[i];
   }
 
-  // Initialize result as 0 rotation sum
   let maxVal = currVal;
 
-  // Try all rotations one by one and find
-  // the maximum rotation sum.
   for (let j = 1; j < n; j++) {
     currVal = currVal + arrSum - n * arr[n - j];
     if (currVal > maxVal) maxVal = currVal;
   }
 
-  // Return result
   return maxVal;
 }
 
