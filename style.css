@@ -3,6 +3,22 @@
   height: 300px;
   position: relative;
   background-color: yellow;
+
+  background: radial-gradient(
+      circle at 25% 75%,
+      red 12%,
+      black 12%,
+      black 15%,
+      transparent 15%
+    ),
+    radial-gradient(
+      circle at 75% 25%,
+      red 12%,
+      black 12%,
+      black 15%,
+      transparent 15%
+    ),
+    yellow;
 }
 
 #app::after,
